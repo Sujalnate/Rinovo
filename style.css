@@ -1,3 +1,5 @@
+/* Main CSS */
+
 * {
   margin: 0px;
   padding: 0px;
@@ -5,7 +7,7 @@
   font-family: "Epilogue", sans-serif;
 }
 
-/* ==================== SECTION 1: HEADER / HERO ==================== */
+/* SECTION 1: HEADER / HERO */
 
 .header {
   width: 100%;
@@ -21,7 +23,7 @@
   height: 100vh;
   overflow: hidden;
   object-fit: cover;
-  /* height: 100%; */
+
   position: absolute;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,7 +43,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 10000; 
+  z-index: 10000;
 }
 
 nav .logo-main {
@@ -75,11 +77,7 @@ nav li a:hover::before {
   transform: scaleX(1);
   width: 100%;
 }
-/* .menu i {
-  font-size: 45px;
-  color: #d8ff36;
-  display: none !important;
-} */
+
 .menuToggle {
   display: none;
 }
@@ -161,16 +159,14 @@ nav li a:hover::before {
   }
 }
 
-
-/* ==================== END SECTION 1 ==================== */
-/* ==================== SECTION 2: CREATION ==================== */
+/* END SECTION 1 */
+/* SECTION 2: CREATION */
 .creation {
   width: 100%;
   padding-top: 140px;
   padding-bottom: 140px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   overflow: hidden;
@@ -207,8 +203,6 @@ nav li a:hover::before {
 .pencil::after {
   content: "";
   position: absolute;
-  left: 1;
-  right: 1;
   width: 400px;
   height: 430px;
   border-radius: 100%;
@@ -216,9 +210,6 @@ nav li a:hover::before {
   background: #d8ff36;
   transform: scale(0);
   transition: all 0.5s;
-}
-
-.pencil::after {
   animation: pencil 2s ease-out;
 }
 .pencil:hover::after {
@@ -240,13 +231,9 @@ nav li a:hover::before {
   height: 430px;
   border-radius: 100%;
   z-index: -1;
-  transition: all 0.4s;
   background: #d8ff36;
   transform: scale(0);
   transition: all 0.5s;
-}
-
-.pen::after {
   animation: pen 2s ease-out;
 }
 .pen:hover::after {
@@ -268,25 +255,19 @@ nav li a:hover::before {
   height: 430px;
   border-radius: 100%;
   z-index: -1;
-  transition: all 0.4s;
   background: #d8ff36;
   transform: scale(0);
   transition: all 0.5s;
-}
-
-.tick::after {
   animation: tick 2s ease-out;
 }
 .tick:hover::after {
   transform: scale(0.9);
 }
 
-
-/* ==================== SECTION 3: ABOUT / AGENCY ==================== */
+/* SECTION 3: ABOUT / AGENCY */
 
 .third {
   padding-left: 30px;
-  max-width: 1320px;
   display: flex;
   max-width: 100%;
 }
@@ -317,7 +298,6 @@ nav li a:hover::before {
 .left-bottom {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   justify-content: flex-start;
 }
 .bt1 h5 {
@@ -350,7 +330,6 @@ nav li a:hover::before {
   font-weight: 700;
   padding: 17px;
   display: flex;
-  justify-content: center;
   align-items: center;
   justify-content: space-evenly;
   color: #fff;
@@ -380,7 +359,7 @@ nav li a:hover::before {
 
 .btn1:hover {
   transform: translateY(-10px);
-  /* transform: scale(0); */
+
   background-color: #d1fd1e;
   color: #000;
 }
@@ -450,10 +429,9 @@ nav li a:hover::before {
   }
 }
 
+/* END SECTION 3 */
 
-/* ==================== END SECTION 3 ==================== */
-
-/* ==================== SECTION 4: SERVICES SLIDER ==================== */
+/* SECTION 4: SERVICES SLIDER */
 
 .border {
   border-top: 1px solid #555;
@@ -497,11 +475,9 @@ nav li a:hover::before {
   }
 }
 
+/* END SECTION 4 */
 
-/* ==================== END SECTION 4 ==================== */
-
-/* ==================== SECTION 5: FEATURED PROJECTS ==================== */
-
+/* SECTION 5: FEATURED PROJECTS */
 
 .projects-section {
   width: 100%;
@@ -773,13 +749,10 @@ nav li a:hover::before {
   width: 470px;
   height: 350px;
   overflow: hidden;
-  position: absolute;
   top: 150px;
   left: 200px;
   background-position: center;
   background-size: cover;
-  filter: blur(15%);
-  position: 50%;
   z-index: 1;
   transform: rotate(-30deg);
   animation: ani-img 15s ease-in-out infinite;
@@ -877,7 +850,6 @@ nav li a:hover::before {
   width: 100%;
 }
 .row {
-  width: 100%;
   width: auto;
   padding: 30px 0;
   border-top: 1px solid #b8b0b0;
@@ -964,7 +936,6 @@ nav li a:hover::before {
   font-weight: 700;
   padding: 30px 25px;
   display: flex;
-  justify-content: center;
   align-items: center;
   justify-content: space-evenly;
   color: #fff;
@@ -985,7 +956,6 @@ nav li a:hover::before {
   font-weight: 700;
   padding: 30px 25px;
   display: flex;
-  justify-content: center;
   align-items: center;
   justify-content: space-evenly;
   color: black;
@@ -1016,10 +986,6 @@ nav li a:hover::before {
 
 .btn3:hover {
   transition: all 0.3s ease;
-  opacity: 1;
-}
-
-.btn3:hover {
   transform: scale(1);
   opacity: 2;
 }
@@ -1040,10 +1006,9 @@ nav li a:hover::before {
   line-height: 1;
 }
 
+/* END SECTION 5 */
 
-/* ==================== END SECTION 5 ==================== */
-
-/* 6th start */
+/* Experts Start */
 .experts {
   padding-top: 60px;
   padding-bottom: 100px;
@@ -1067,7 +1032,7 @@ nav li a:hover::before {
 }
 
 .cards-full {
-  /* width: 100%; */
+
   padding-left: 2px;
   padding-right: 2px;
   display: flex;
@@ -1078,7 +1043,6 @@ nav li a:hover::before {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
   justify-content: space-evenly;
 }
 .cards-item {
@@ -1129,7 +1093,7 @@ nav li a:hover::before {
   font-weight: 400;
 }
 
-/* item down */
+/* Team Card */
 .item-down {
   display: flex;
   align-items: center;
@@ -1159,7 +1123,7 @@ nav li a:hover::before {
 .letter span {
   background-color: #fff;
   background-size: cover;
-  /* background-position: center; */
+
   overflow: hidden;
   background-clip: text;
 }
@@ -1167,8 +1131,6 @@ nav li a:hover::before {
 .cards-item::after {
   content: "";
   position: absolute;
-  left: 1;
-  right: 1;
   width: 400px;
   height: 400px;
   border-radius: 100%;
@@ -1177,9 +1139,6 @@ nav li a:hover::before {
   transform: scale(0);
   transition: all 0.5s;
   transform-origin: center;
-}
-
-.cards-item::after {
   animation: card-item 2s ease-out;
 }
 .cards-item:hover::after {
@@ -1194,8 +1153,6 @@ nav li a:hover::before {
 .social ul li a::before {
   content: "";
   position: absolute;
-  left: 1;
-  right: 1;
   width: 60px;
   height: 60px;
   border-radius: 100%;
@@ -1203,9 +1160,6 @@ nav li a:hover::before {
   background-color: black;
   transform: scale(0);
   transition: all 0.4s;
-}
-
-.social ul li a::before {
   animation: social 2s ease;
 }
 .social ul li a:hover::before {
@@ -1215,8 +1169,7 @@ nav li a:hover::before {
   color: #fff;
 }
 
-
-/* ==================== SECTION 7: TESTIMONIALS ==================== */
+/* SECTION 7: TESTIMONIALS */
 
 .reviews {
   position: relative;
@@ -1227,7 +1180,7 @@ nav li a:hover::before {
 .star {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
+
 }
 .star-titles {
   width: 50%;
@@ -1328,8 +1281,7 @@ nav li a:hover::before {
   border-radius: 50%;
 }
 
-
-/* ==================== END SECTION 7 ==================== */
+/* END SECTION 7 */
 .pura {
   padding-left: 30px;
   padding-right: 30px;
@@ -1352,7 +1304,6 @@ nav li a:hover::before {
   animation: scale-in-hor-left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .up-circle {
-  position: absolute;
   width: 200px;
   height: 200px;
   background-color: #d8ff36;
@@ -1403,19 +1354,9 @@ nav li a:hover::before {
   transform-origin: 0 90px;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+/* END SECTION 8 */
 
-
-/* ==================== END SECTION 8 ==================== */
-
-/* ==================== SECTION 9: COUNTERS ==================== */
+/* SECTION 9: COUNTERS */
 .count {
   padding-bottom: 140px;
   padding-left: 20px;
@@ -1463,10 +1404,9 @@ nav li a:hover::before {
   line-height: 1;
 }
 
+/* END SECTION 9 */
 
-/* ==================== END SECTION 9 ==================== */
-
-/* ==================== SECTION 10: SERVICES / CTA ==================== */
+/* SECTION 10: SERVICES / CTA */
 
 .black {
   padding-bottom: 100px;
@@ -1560,15 +1500,6 @@ nav li a:hover::before {
   justify-content: center;
   align-items: center;
 }
-.sub-circle1 {
-  right: 0px;
-  top: 70px;
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  background: #d8ff36;
-  border-radius: 100%;
-}
 
 .sub-circle1 {
   right: 0px;
@@ -1618,7 +1549,6 @@ nav li a:hover::before {
   position: absolute;
   bottom: 0;
   left: 0;
-  display: flex;
   flex-direction: column;
   display: none;
 }
@@ -1639,7 +1569,6 @@ nav li a:hover::before {
   font-weight: 700;
   padding: 17px;
   display: flex;
-  justify-content: center;
   align-items: center;
   justify-content: space-evenly;
   color: #000;
@@ -1647,7 +1576,7 @@ nav li a:hover::before {
   border-radius: 45px;
   border: none;
   margin-bottom: 20px;
-  /* position: relative; */
+
   transition: all 0.3s ease;
 }
 
@@ -1681,7 +1610,6 @@ nav li a:hover::before {
   font-weight: 700;
   padding: 17px;
   display: flex;
-  justify-content: center;
   align-items: center;
   justify-content: space-evenly;
   color: #fff;
@@ -1718,9 +1646,8 @@ nav li a:hover::before {
   opacity: 1;
 }
 
-
-/* ==================== END SECTION 10 ==================== */
-/* ==================== SECTION 11: BLOG ==================== */
+/* END SECTION 10 */
+/* SECTION 11: BLOG */
 .blog {
   padding-top: 100px;
   padding-bottom: 140px;
@@ -1784,6 +1711,7 @@ nav li a:hover::before {
 .date {
   margin-top: 20px;
   margin-right: 12px;
+  display: inline-block;
 }
 .date .twenty {
   width: fit-content;
@@ -1793,9 +1721,6 @@ nav li a:hover::before {
   color: #000;
   font-size: 14px;
   font-weight: 700;
-}
-.date {
-  display: inline-block;
 }
 .april h5 {
   font-size: 22px;
@@ -1821,13 +1746,12 @@ nav li a:hover::before {
   text-decoration: none;
 }
 
+/* END SECTION 11 */
 
-/* ==================== END SECTION 11 ==================== */
-
-/* ==================== SECTION 12: CLIENTS ==================== */
+/* SECTION 12: CLIENTS */
 
 .clients {
-  /* padding-top: 100px; */
+
   padding-left: 30px;
   padding-right: 30px;
   max-width: 1318px;
@@ -1859,7 +1783,7 @@ nav li a:hover::before {
 .clients-cards1 {
   margin: 10px 0px;
   width: 300px;
-  /* width: 280px; */
+
   height: 200px;
   position: relative;
   overflow: hidden;
@@ -1901,18 +1825,16 @@ nav li a:hover::before {
   transform: scale(1.5);
 }
 
+/* END SECTION 12 */
 
-/*  */
-/* ==================== END SECTION 12 ==================== */
-
-/* ==================== FOOTER ==================== */
+/* Footer */
 footer {
   background: #000;
-  /* position: fixed; */
+
   left: 0;
   bottom: 0;
   width: 100%;
-  /* z-index: 5; */
+
 }
 
 .all-footer {
@@ -1997,7 +1919,7 @@ footer {
 .lines {
   margin: 50px 0 30px;
   border-top: 9px solid rgba(255, 255, 255, 0.048);
-  background-image: url(.assets/images/fline.svg);
+  background-image: url(./assets/images/fline.svg);
 }
 .footer-bottom {
   display: flex;
@@ -2054,8 +1976,6 @@ footer {
 .social-footer ul li a::before {
   content: "";
   position: absolute;
-  left: 1;
-  right: 1;
   width: 60px;
   height: 60px;
   border-radius: 100%;
@@ -2063,9 +1983,6 @@ footer {
   background-color: #d8ff36;
   transform: scale(0);
   transition: all 0.4s;
-}
-
-.social-footer ul li a::before {
   animation: social 2s ease;
 }
 .social-footer ul li a:hover::before {
@@ -2075,10 +1992,7 @@ footer {
   color: #000;
 }
 
-
-/* ============================== */
-
-/* About us start */
+/* About Us Start */
 
 .about-head {
   background-color: #000;
@@ -2112,7 +2026,7 @@ footer {
   position: absolute;
   left: 0;
   top: 0;
-  /* width: 100%; */
+
   width: 34px;
   height: 100%;
   background-repeat: no-repeat;
@@ -2163,9 +2077,8 @@ footer {
   border: none;
 }
 
-
-/* 1st end */
-/* 2nd start */
+/* About Us End */
+/* Services Second Section Start */
 
 .agency {
   padding-bottom: 20px;
@@ -2191,7 +2104,7 @@ footer {
 }
 
 .agency-content-left h2 {
-  font-size: 50px;
+  font-size: 38px;
   font-weight: 600;
   line-height: 1.2;
   max-width: 100%;
@@ -2211,12 +2124,11 @@ footer {
   max-width: 100%;
 }
 
+/* About Us Second Section End */
 
-/* 2rd slide end */
+/* About Us Third Section */
 
-/* 3th slide start/  3rd end */
-
-/* ==================== SECTION 4: SERVICES SLIDER ==================== */
+/* SECTION 4: SERVICES SLIDER */
 
 .full-img1 {
   max-width: 100%;
@@ -2234,10 +2146,9 @@ footer {
   animation: scale-in-hor-left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+/* END SECTION 4 */
 
-/* ==================== END SECTION 4 ==================== */
-
-/* ==================== SECTION 5: FEATURED PROJECTS ==================== */
+/* SECTION 5: FEATURED PROJECTS */
 .mission {
   padding-left: 30px;
   padding-right: 30px;
@@ -2302,8 +2213,7 @@ footer {
   line-height: 1.5;
 }
 
-
-/* ==================== SECTION 6: EXPERT TEAM ==================== */
+/* SECTION 6: EXPERT TEAM */
 .two-img {
   padding-top: 100px;
   padding-bottom: 140px;
@@ -2327,9 +2237,8 @@ footer {
   max-width: 100%;
 }
 
-
-/* ==================== END SECTION 6 ==================== */
-/* ==================== SECTION 7: TESTIMONIALS ==================== */
+/* END SECTION 6 */
+/* SECTION 7: TESTIMONIALS */
 
 .service-agency {
   max-width: 1318px;
@@ -2428,8 +2337,6 @@ footer {
 .service-item-img1::before {
   content: "";
   position: absolute;
-  left: 1;
-  right: 1;
   width: 60px;
   height: 60px;
   border-radius: 100%;
@@ -2437,18 +2344,15 @@ footer {
   background-color: #d8ff36;
   transform: scale(0);
   transition: all 0.4s;
-}
-.service-item-img1::before {
   animation: service 2s ease;
 }
 .service-item-img1:hover::before {
   transform: scale(1.8);
 }
 
+/* Testimonials End */
 
-/* 7th end */
-
-/* 8th start */
+/* Video Section Start */
 .awards {
   padding-bottom: 140px;
   max-width: 1318px;
@@ -2490,9 +2394,8 @@ footer {
   color: #1b252e;
 }
 
-
-/* 8th end */
-/* 9th start */
+/* Video Section End */
+/* Counters Start */
 
 .family {
   padding-top: 60px;
@@ -2525,7 +2428,7 @@ footer {
 }
 
 .family-title h2 {
-  font-size: 50px;
+  font-size: 38px;
   font-weight: 600;
   max-width: 100%;
 }
@@ -2546,7 +2449,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  /* height: 380px; */
+
   text-align: center;
   line-height: 1;
 }
@@ -2611,8 +2514,6 @@ footer {
 .img-social ul li a::before {
   content: "";
   position: absolute;
-  left: 1;
-  right: 1;
   width: 60px;
   height: 60px;
   border-radius: 100%;
@@ -2671,8 +2572,6 @@ footer {
 .family-circle::before {
   content: "";
   position: absolute;
-  left: 1;
-  right: 1;
   width: 100px;
   height: 100px;
   border-radius: 100%;
@@ -2685,8 +2584,7 @@ footer {
   transform: scale(0.9);
 }
 
-
-/* ==================== END SECTION 9 ==================== */
+/* END SECTION 9 */
 
 .thomas-customer {
   padding-bottom: 140px;
@@ -2759,7 +2657,7 @@ footer {
 }
 .arrow i {
   position: absolute;
-  /* left: 20px; */
+
   right: 25px;
   top: 0px;
   font-size: 65px;
@@ -2808,15 +2706,13 @@ footer {
   color: black;
 }
 
+/* END SECTION 10 */
 
-/* ==================== END SECTION 10 ==================== */
+/* Footer Content End */
+/* End Footer */
 
-/* 11th end */
-/* ==================== END FOOTER ==================== */
-
-/* ============================================== */
-/* Team start */
-/* ==================== SECTION 4: SERVICES SLIDER ==================== */
+/* Team Start */
+/* SECTION 4: SERVICES SLIDER */
 .clients1 {
   padding-top: 130px;
   padding-left: 40px;
@@ -2825,13 +2721,11 @@ footer {
   padding-bottom: 90px;
 }
 
+/* Team End */
 
-/* 4th end */
-
-/* ========================================================================= */
-/* Services start */
-/* ==================== END SECTION 1 ==================== */
-/* 2nd start */
+/* Services Start */
+/* END SECTION 1 */
+/* Services Second Section Start */
 .brand-creation {
   padding-top: 140px;
   padding-bottom: 140px;
@@ -2982,15 +2876,12 @@ footer {
   border: 1px solid white;
 }
 
-
-/* 2nd  slide end */
-/* 3rd end */
-
-/* ============================================================= */
+/* Services Second Section End */
+/* Services Third Section End */
 
 /* Blog Start */
 
-/* ==================== SECTION 2: CREATION ==================== */
+/* SECTION 2: CREATION */
 
 .blog-content {
   padding-top: 140px;
@@ -3009,8 +2900,7 @@ footer {
   width: 65%;
   max-width: 100%;
   flex: 0 0 auto;
-  /* padding-right: 13px;
-    padding-left: 13px; */
+
 }
 .business-item {
   margin-bottom: 60px;
@@ -3020,7 +2910,7 @@ footer {
 .business-item-img {
   margin: 0 0 25px;
   line-height: 1.2;
-  /* position: relative; */
+
 }
 .business-item-img img {
   width: 100%;
@@ -3029,22 +2919,6 @@ footer {
   object-fit: cover;
   object-position: center;
   animation: scale-in-hor-left 0.5s ease-in both;
-}
-@keyframes scale-in-hor-left {
-  0% {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
-    opacity: 1;
-  }
 }
 .date1 {
   margin-top: 20px;
@@ -3135,7 +3009,7 @@ footer {
 .right-bottom {
   padding: 44px;
   border-bottom: 1px solid #b2b2b2;
-  /* border: 1px solid #b2b2b2;/ */
+
 }
 .right-bottom h2 {
   margin-bottom: 30px;
@@ -3263,9 +3137,7 @@ footer {
   border-radius: 50px;
 }
 
-
-/* =========================================================== */
-/* contact us */
+/* Contact Us Start */
 
 .contact {
   padding-top: 140px;
@@ -3403,7 +3275,7 @@ textarea {
   background-color: #fff;
   transform: scaleX(0);
   transition: all 0.4s;
-  /* transform-origin: bottom right; */
+
 }
 .form-right-content ul li a:hover::before {
   transform: scaleX(1);
@@ -3449,9 +3321,6 @@ textarea {
   background-color: #d8ff36;
   transform: scale(0);
   transition: all 0.4s ease-in-out;
-}
-
-.social-footer1 ul li a::before {
   animation: 2s ease;
 }
 .social-footer1 ul li a:hover::before {
@@ -3461,7 +3330,6 @@ textarea {
   color: #000;
 }
 
-
 iframe {
   width: 100%;
   height: 450px;
@@ -3470,34 +3338,22 @@ iframe {
   padding-bottom: 140px;
 }
 
-
-/* ================================================================
-   MOBILE & TABLET RESPONSIVE DESIGN
-*/
+/* Tablet Start */
 
 @media only screen and (max-width: 991px) {
-  html,
-  body {
+
+  html, body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
   }
 
-  img,
-  video,
-  iframe {
+  img, video, iframe {
     max-width: 100%;
   }
 
-  /* --------------------------------------------------------------
-     NAVBAR
-     -------------------------------------------------------------- */
   nav {
     padding: 10px 25px;
-  }
-
-  .menuToggle {
-    display: none;
   }
 
   .menuIcon {
@@ -3544,9 +3400,6 @@ iframe {
     line-height: 1.35;
   }
 
-  /* --------------------------------------------------------------
-     HOME HERO
-     -------------------------------------------------------------- */
   .header {
     min-height: 720px;
     height: auto;
@@ -3586,9 +3439,6 @@ iframe {
     margin: 20px 20px 15px 0;
   }
 
-  /* --------------------------------------------------------------
-     CREATION
-     -------------------------------------------------------------- */
   .creation {
     padding: 120px 24px;
     gap: 70px 28px;
@@ -3604,9 +3454,7 @@ iframe {
     align-content: center;
   }
 
-  .pencil,
-  .pen,
-  .tick {
+  .pencil, .pen, .tick {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3631,20 +3479,13 @@ iframe {
     line-height: 1.55;
   }
 
-  /* The existing animated pseudo-elements remain animated; only their
-     responsive box is resized so the circle stays aligned with its item. */
-  .pencil::after,
-  .pen::after,
-  .tick::after {
+  .pencil::after, .pen::after, .tick::after {
     width: 100%;
     height: 100%;
     left: 0;
     right: auto;
   }
 
-  /* --------------------------------------------------------------
-     HOME ABOUT / AGENCY
-     -------------------------------------------------------------- */
   .third {
     width: 100%;
     max-width: 100%;
@@ -3653,8 +3494,7 @@ iframe {
     flex-wrap: wrap;
   }
 
-  .left,
-  .right {
+  .left, .right {
     width: 100%;
     max-width: 100%;
   }
@@ -3681,23 +3521,15 @@ iframe {
     gap: 35px;
   }
 
-  .bt1,
-  .bt2 {
+  .bt1, .bt2 {
     width: 100%;
     max-width: 100%;
   }
 
-  /* --------------------------------------------------------------
-     MOVING TEXT
-     -------------------------------------------------------------- */
-  .slider,
-  .border {
+  .slider, .border {
     max-width: 100%;
   }
 
-  /* --------------------------------------------------------------
-     FEATURED PROJECTS
-     -------------------------------------------------------------- */
   .projects-section {
     min-height: auto;
     padding: 70px 30px 60px;
@@ -3729,8 +3561,6 @@ iframe {
     line-height: 1.18;
   }
 
-  /* Keep the original hover/rotation rules. Only reposition the visual
-     container so the existing effect remains close to its project row. */
   .project-visual {
     width: 100%;
     height: 360px;
@@ -3754,9 +3584,6 @@ iframe {
     top: 45px;
   }
 
-  /* --------------------------------------------------------------
-     SHOWCASE / ANIMATED IMAGE AREA
-     -------------------------------------------------------------- */
   .showcase {
     padding-left: 30px;
     padding-right: 30px;
@@ -3771,15 +3598,10 @@ iframe {
     max-height: 74vw;
   }
 
-  .left-01,
-  .left-02,
-  .branding {
+  .left-01, .left-02, .branding {
     max-width: 100%;
   }
 
-  /* --------------------------------------------------------------
-     TEAM / EXPERTS
-     -------------------------------------------------------------- */
   .experts {
     padding-left: 30px;
     padding-right: 30px;
@@ -3794,31 +3616,20 @@ iframe {
     max-width: none;
   }
 
-  /* --------------------------------------------------------------
-     REVIEWS
-     -------------------------------------------------------------- */
   .reviews {
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  .star-titles,
-  .rating,
-  .star-5 {
+  .star-titles, .rating, .star-5 {
     max-width: 100%;
   }
 
-  /* --------------------------------------------------------------
-     VIDEO / IMAGE SECTION
-     -------------------------------------------------------------- */
-  .pura,
-  .full-img,
-  .full-img1 {
+  .pura, .full-img, .full-img1 {
     max-width: 100%;
   }
 
-  .full-img,
-  .full-img1 {
+  .full-img, .full-img1 {
     min-height: 520px;
     height: auto;
   }
@@ -3828,9 +3639,6 @@ iframe {
     max-height: 75vw;
   }
 
-  /* --------------------------------------------------------------
-     COUNTERS
-     -------------------------------------------------------------- */
   .count {
     display: flex;
     flex-wrap: wrap;
@@ -3844,9 +3652,6 @@ iframe {
     width: calc(33.333% - 10px);
   }
 
-  /* --------------------------------------------------------------
-     BLACK CTA / GET IN TOUCH
-     -------------------------------------------------------------- */
   .black {
     height: auto;
     min-height: 650px;
@@ -3918,11 +3723,6 @@ iframe {
     margin-bottom: 12px;
   }
 
-  /* Existing hover button behavior remains untouched. */
-
-  /* --------------------------------------------------------------
-     HOME BLOG
-     -------------------------------------------------------------- */
   .blog {
     padding-left: 30px;
     padding-right: 30px;
@@ -3937,11 +3737,7 @@ iframe {
     width: calc(50% - 15px);
   }
 
-  /* --------------------------------------------------------------
-     CLIENTS
-     -------------------------------------------------------------- */
-  .clients,
-  .clients-cards {
+  .clients, .clients-cards {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -3954,9 +3750,6 @@ iframe {
     width: calc(33.333% - 20px);
   }
 
-  /* --------------------------------------------------------------
-     INTERNAL PAGE HEADERS / ABOUT PAGE
-     -------------------------------------------------------------- */
   .about-head {
     padding: 170px 30px 35px;
   }
@@ -3981,8 +3774,7 @@ iframe {
     box-sizing: border-box;
   }
 
-  .agency-content-left,
-  .agency-right {
+  .agency-content-left, .agency-right {
     width: 100%;
     max-width: 100%;
   }
@@ -3991,9 +3783,6 @@ iframe {
     padding-bottom: 30px;
   }
 
-  /* --------------------------------------------------------------
-     SERVICES PAGE
-     -------------------------------------------------------------- */
   .brand-creation {
     width: 100%;
     max-width: 100%;
@@ -4031,9 +3820,6 @@ iframe {
     width: calc(50% - 15px);
   }
 
-  /* --------------------------------------------------------------
-     TEAM PAGE
-     -------------------------------------------------------------- */
   .family {
     width: 100%;
     max-width: 100%;
@@ -4050,15 +3836,11 @@ iframe {
     max-width: none;
   }
 
-  .img1-img,
-  .img1-img img {
+  .img1-img, .img1-img img {
     max-width: 100%;
     height: auto;
   }
 
-  /* --------------------------------------------------------------
-     BLOG PAGE
-     -------------------------------------------------------------- */
   .blog-content {
     width: 100%;
     max-width: 100%;
@@ -4066,8 +3848,7 @@ iframe {
     box-sizing: border-box;
   }
 
-  .business-left,
-  .business-right {
+  .business-left, .business-right {
     width: 100%;
     max-width: 100%;
   }
@@ -4085,9 +3866,6 @@ iframe {
     max-width: 100%;
   }
 
-  /* --------------------------------------------------------------
-     CONTACT PAGE
-     -------------------------------------------------------------- */
   .contact {
     width: 100%;
     max-width: 100%;
@@ -4101,14 +3879,12 @@ iframe {
     gap: 35px;
   }
 
-  .form-left,
-  .form-right {
+  .form-left, .form-right {
     width: 100%;
     max-width: 100%;
   }
 
-  .form-1 input,
-  .form-1 textarea {
+  .form-1 input, .form-1 textarea {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -4119,9 +3895,6 @@ iframe {
     max-width: 100%;
   }
 
-  /* --------------------------------------------------------------
-     FOOTER
-     -------------------------------------------------------------- */
   .all-footer {
     width: 100%;
     max-width: 100%;
@@ -4135,9 +3908,7 @@ iframe {
     gap: 35px 0;
   }
 
-  .footer-left,
-  .footer-middle,
-  .footer-right {
+  .footer-left, .footer-middle, .footer-right {
     width: 50%;
     max-width: 100%;
   }
@@ -4161,12 +3932,15 @@ iframe {
     width: 100%;
     max-width: 100%;
   }
+
 }
 
+/* Tablet End */
+
+/* Mobile Start */
+
 @media only screen and (max-width: 767px) {
-  /* --------------------------------------------------------------
-     NAVBAR
-     -------------------------------------------------------------- */
+
   nav {
     padding: 10px 18px;
   }
@@ -4178,13 +3952,10 @@ iframe {
   }
 
   nav ul li a {
-    min-height: 44px;
     padding: 10px 4px;
+    min-height: 44px;
   }
 
-  /* --------------------------------------------------------------
-     HERO
-     -------------------------------------------------------------- */
   .header {
     min-height: 680px;
     padding: 100px 22px 85px;
@@ -4199,9 +3970,6 @@ iframe {
     line-height: 1.55;
   }
 
-  /* --------------------------------------------------------------
-     CREATION — single-column mobile layout
-     -------------------------------------------------------------- */
   .creation {
     padding: 90px 16px;
     gap: 0px;
@@ -4228,9 +3996,45 @@ iframe {
     line-height: 1.5;
   }
 
-  /* --------------------------------------------------------------
-     PROJECTS
-     -------------------------------------------------------------- */
+  .third {
+    padding: 0 22px;
+    display: block;
+    overflow: hidden;
+  }
+
+  .sucess {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .title2 {
+    font-size: 48px;
+    line-height: 1.08;
+    max-width: 100%;
+    padding-bottom: 30px;
+    font-weight: 600;
+  }
+
+  .number {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+  }
+
+  .left-bottom {
+    gap: 30px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .bt1, .bt2 {
+    margin-left: 0;
+  }
+
   .projects-section {
     padding: 60px 22px 50px;
   }
@@ -4247,7 +4051,6 @@ iframe {
 
   .project-category {
     width: 100px;
-    font-size: 14px;
     line-height: 1.3;
   }
 
@@ -4264,7 +4067,6 @@ iframe {
   .project-green-circle {
     width: min(280px, 74vw);
     height: min(280px, 74vw);
-    left: 50%;
     margin-left: -35%;
   }
 
@@ -4272,13 +4074,10 @@ iframe {
     width: min(310px, 82vw);
     height: min(230px, 61vw);
     left: 50%;
-    margin-left: -41%;
     top: 40px;
+    margin-left: -41%;
   }
 
-  /* --------------------------------------------------------------
-     SHOWCASE
-     -------------------------------------------------------------- */
   .showcase {
     padding-left: 20px;
     padding-right: 20px;
@@ -4294,90 +4093,132 @@ iframe {
     height: min(260px, 70vw);
   }
 
-  /* --------------------------------------------------------------
-     TEAM / REVIEWS
-     -------------------------------------------------------------- */
-  .experts,
-  .reviews {
-    padding-left: 22px;
-    padding-right: 22px;
-  }
-
   .cards-item {
     width: 100%;
   }
 
-  /* --------------------------------------------------------------
-     COUNTERS
-     -------------------------------------------------------------- */
+  .reviews {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    padding-bottom: 90px;
+    overflow: hidden;
+  }
+
+  .up-circle {
+    width: 145px;
+    height: 145px;
+  }
+
   .count {
-    padding-left: 114px;
-    padding-right: 22px;
+    justify-content: flex-start;
+    gap: 45px;
+    width: 100%;
+    padding: 0 26px 80px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .count > div {
-    width: calc(50% - 8px);
+    width: 100%;
+    text-align: left;
   }
 
-  /* --------------------------------------------------------------
-     CTA
-     -------------------------------------------------------------- */
   .black {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
+    min-height: 0;
+    padding: 0;
+    width: 100%;
   }
 
   .black-img {
-    min-height: 820px;
-    padding: 80px 22px 55px;
+    min-height: 683px;
+    padding: 50px 22px 45px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .black-content {
+    flex-direction: column;
   }
 
   .content-left {
-    padding-bottom: 5px;
-  }
-
-  .content-left p {
-    font-size: 15px;
+    padding: 0;
+    margin: 0;
   }
 
   .content-left h2 {
-    font-size: clamp(37px, 10vw, 50px);
-    padding-bottom: 25px;
+    font-size: 34px;
+    line-height: 1.08;
+    width: 100%;
+    padding: 0 0 28px;
+    margin: 0;
   }
 
   .email a {
-    font-size: clamp(23px, 7vw, 32px);
-    line-height: 1.15;
+    font-size: 21px;
+    display: block;
+    width: 100%;
+    line-height: 1.2;
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
 
   .email p {
     font-size: 16px;
-    line-height: 1.6;
+    margin: 18px 0 0;
   }
 
   .content-right {
-    min-height: 470px;
+    min-height: 360px;
+    align-items: flex-start;
+    margin: 0;
   }
 
   .right-img {
-    width: min(330px, calc(100vw - 42px));
-    height: min(330px, calc(100vw - 42px));
+    width: 292px;
+    height: 292px;
+    flex: 0 0 292px;
+    margin-top: 55px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .right-img .design1 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
   }
 
   .right-img .btn4 {
-    width: min(220px, calc(100vw - 90px));
-    height: 58px;
-    font-size: 13px;
-    margin-bottom: 9px;
+    width: 244px;
+    height: 62px;
+    position: relative;
+    min-width: 244px;
+    margin: 0;
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    z-index: 2;
   }
 
-  /* Keep decorative circles using the existing animation; only move the
-     containing CTA artwork into the mobile flow. */
-
-  /* --------------------------------------------------------------
-     HOME BLOG / CLIENTS
-     -------------------------------------------------------------- */
   .blog {
     padding-left: 22px;
     padding-right: 22px;
@@ -4387,8 +4228,7 @@ iframe {
     width: 100%;
   }
 
-  .clients,
-  .clients-cards {
+  .clients, .clients-cards {
     padding-left: 22px;
     padding-right: 22px;
   }
@@ -4397,9 +4237,6 @@ iframe {
     width: calc(50% - 10px);
   }
 
-  /* --------------------------------------------------------------
-     INTERNAL PAGES
-     -------------------------------------------------------------- */
   .about-head {
     padding: 140px 22px 30px;
   }
@@ -4413,264 +4250,70 @@ iframe {
     line-height: 1.55;
   }
 
-  .agency,
-  .brand-creation,
-  .family,
-  .blog-content,
-  .contact {
-    padding-left: 22px;
-    padding-right: 22px;
-  }
-
-  .creation-card1,
-  .service-item1,
-  .family-img1 {
-    width: 100%;
-  }
-
   .service-agency {
     padding-left: 22px;
     padding-right: 22px;
   }
 
-  .business-left,
-  .business-right,
-  .form-left,
-  .form-right {
-    width: 100%;
-  }
-
-  /* --------------------------------------------------------------
-     FOOTER
-     -------------------------------------------------------------- */
   .all-footer {
-    padding: 60px 22px;
+    padding: 45px 64px 55px;
   }
 
-  .footer-left,
-  .footer-middle,
-  .footer-right {
+  .footer-content {
+    flex-wrap: nowrap;
+    gap: 0;
     width: 100%;
+    flex-direction: column;
+  }
+
+  .footer-left, .footer-middle, .footer-right {
+    width: 100%;
+  }
+
+  .footer-img {
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .footer-img1 {
-    width: calc(50% - 5px);
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .header {
-    min-height: 660px;
+    width: calc(33.333333% - 7px);
+    margin: 0;
+    padding: 0;
+    max-width: none;
   }
 
-  .content h1 {
-    font-size: clamp(40px, 12vw, 54px);
-  }
-
-  .subtitle {
-    font-size: 17px;
-  }
-
-  .creation {
-    padding-top: 35px;
-    padding-bottom: 65px;
-  }
-
-  .circle {
-    width: min(330px, calc(100vw - 30px));
-    min-height: min(330px, calc(100vw - 30px));
-    padding: 34px 20px;
-  }
-
-  .circle img {
-    width: 50px;
-  }
-
-  .circle h5 {
-    font-size: clamp(32px, 10vw, 43px);
-  }
-
-  .circle p {
-    max-width: 265px;
-    font-size: 14.5px;
-  }
-
-  .project-visual {
-    height: 290px;
-  }
-
-  .project-green-circle {
-    width: min(250px, 72vw);
-    height: min(250px, 72vw);
-    margin-left: -34%;
-  }
-
-  .project-image {
-    width: min(290px, 82vw);
-    height: min(215px, 61vw);
-    margin-left: -41%;
-    top: 36px;
-  }
-
-  .count > div {
-    width: 100%;
-  }
-
-  .black-img {
-    min-height: 800px;
-  }
-
-  .content-right {
-    min-height: 430px;
-  }
-
-  .right-img {
-    width: min(305px, calc(100vw - 30px));
-    height: min(305px, calc(100vw - 30px));
-  }
-
-  .right-img .btn4 {
-    width: min(210px, calc(100vw - 75px));
-    height: 54px;
-    font-size: 12px;
-  }
-
-  .clients-cards1 {
-    width: 100%;
-  }
-
-  .footer-img1 {
-    width: calc(50% - 5px);
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  nav {
-    padding-left: 13px;
-    padding-right: 13px;
-  }
-
-  nav .logo-main {
-    width: 42px;
-  }
-
-  .menuIcon {
-    font-size: 36px;
-  }
-
-  .list {
-    right: 13px;
-    width: 220px;
-    max-width: calc(100vw - 26px);
-  }
-
-  nav ul li a {
-    min-height: 44px;
-    font-size: 16px;
-  }
-
-  .header {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .circle {
-    width: min(355px, calc(100vw - 24px));
-    min-height: min(329px, calc(100vw - 24px));
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .circle p {
-    max-width: 250px;
-    font-size: 14px;
-  }
-
-  .project-name {
-    font-size: 20px;
-  }
-
-  .project-category {
-    width: 92px;
-  }
-
-  .project-visual {
-    height: 275px;
-  }
-
-  .project-green-circle {
-    width: min(235px, 70vw);
-    height: min(235px, 70vw);
-    margin-left: -32%;
-  }
-
-  .project-image {
-    width: min(280px, 82vw);
-    height: min(208px, 61vw);
-  }
-
-  .black-img {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .content-left h2 {
-    font-size: clamp(35px, 10vw, 46px);
-  }
-
-  .email a {
-    font-size: clamp(21px, 7vw, 28px);
-  }
-
-  .right-img {
-    width: min(292px, calc(100vw - 24px));
-    height: min(292px, calc(100vw - 24px));
-  }
-
-  .right-img .btn4 {
-    width: min(205px, calc(100vw - 65px));
-    height: 52px;
-    font-size: 11.5px;
-  }
-
-  .about-head,
-  .agency,
-  .brand-creation,
-  .family,
-  .contact,
-  .blog-content {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .about-title {
-    font-size: clamp(36px, 10vw, 48px);
-  }
-}
-
-/* =========================================================
-   FINAL MOBILE RESPONSIVE FIXES
-   ONLY THE SECTIONS REQUESTED:
-   1) WELCOME TO ONOVO / ABOUT
-   2) TESTIMONIALS
-   3) IMAGE / VIDEO
-   4) COUNTERS
-   All original CSS above is preserved unchanged.
-   ========================================================= */
-
-
-/* =========================================================
-   1) WELCOME TO ONOVO / ABOUT SECTION
-   ========================================================= */
-
-@media only screen and (max-width: 767px) {
-
-  .third {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 22px;
+  .footer-img1 img {
     display: block;
-    overflow: hidden;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+  }
+
+  .experts, .reviews {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .agency, .brand-creation, .family, .blog-content, .contact {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .creation-card1, .service-item1, .family-img1 {
+    width: 100%;
+  }
+
+  .business-left, .business-right, .form-left, .form-right {
+    width: 100%;
   }
 
   .left {
@@ -4687,26 +4330,8 @@ iframe {
     font-weight: 700;
   }
 
-  .title2 {
-    width: 100%;
-    max-width: 100%;
-    padding-bottom: 30px;
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 1.08;
-  }
-
   .title2 span {
     display: inline;
-  }
-
-  .sucess {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
   }
 
   .right {
@@ -4716,13 +4341,6 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .number {
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    flex-shrink: 0;
   }
 
   .number::before {
@@ -4747,30 +4365,13 @@ iframe {
     transform-origin: 0 133px;
   }
 
-  .left-bottom {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 30px;
-  }
-
-  .bt1,
-  .bt2 {
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-  }
-
-  .bt1 h5,
-  .bt2 h5 {
+  .bt1 h5, .bt2 h5 {
     font-size: 24px;
     line-height: 1.2;
     margin: 0 0 24px;
   }
 
-  .bt1 p,
-  .bt2 p {
+  .bt1 p, .bt2 p {
     width: 100%;
     max-width: 100%;
     font-size: 18px;
@@ -4784,22 +4385,6 @@ iframe {
     margin-top: 30px;
     margin-bottom: 20px;
     font-size: 17px;
-  }
-}
-
-
-/* =========================================================
-   2) TESTIMONIALS
-   ========================================================= */
-
-@media only screen and (max-width: 767px) {
-
-  .reviews {
-    width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 90px;
-    overflow: hidden;
   }
 
   .reviews .star {
@@ -4895,14 +4480,6 @@ iframe {
     height: 31px;
     line-height: 33px;
   }
-}
-
-
-/* =========================================================
-   3) IMAGE / VIDEO SECTION
-   ========================================================= */
-
-@media only screen and (max-width: 767px) {
 
   .pura {
     width: 100%;
@@ -4918,15 +4495,9 @@ iframe {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .up-circle {
-    width: 145px;
-    height: 145px;
   }
 
   .up-circle::before {
@@ -4948,30 +4519,6 @@ iframe {
 
   .circle-motion1 span {
     transform-origin: 0 65px;
-  }
-}
-
-
-/* =========================================================
-   4) COUNTERS
-   ========================================================= */
-
-@media only screen and (max-width: 767px) {
-
-  .count {
-    width: 100%;
-    padding: -1px 26px 80px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 45px;
-  }
-
-  .count > div {
-    width: 100%;
-    text-align: left;
   }
 
   .num-after {
@@ -4997,44 +4544,6 @@ iframe {
     margin-bottom: 0;
     line-height: 1.2;
   }
-}
-
-/* =========================================================
-   FINAL MOBILE CTA FIX - ONLY RESPONSIVE MEDIA QUERY
-   ========================================================= */
-
-@media only screen and (max-width: 767px) {
-
-  .black {
-    width: 100%;
-    height: auto;
-    min-height: 0;
-    padding: 0;
-  }
-
-  .black-img {
-    position: relative;
-    inset: auto;
-    width: 100%;
-    min-height: 683px;
-    padding: 50px 22px 45px;
-    box-sizing: border-box;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .black-content {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .content-left {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
 
   .content-left p {
     font-size: 15px;
@@ -5042,57 +4551,8 @@ iframe {
     margin: 0 0 5px;
   }
 
-  .content-left h2 {
-    width: 100%;
-    padding: 0 0 28px;
-    margin: 0;
-    font-size: 34px;
-    line-height: 1.08;
-  }
-
   .email {
     width: 100%;
-  }
-
-  .email a {
-    display: block;
-    width: 100%;
-    font-size: 21px;
-    line-height: 1.2;
-    white-space: nowrap;
-  }
-
-  .email p {
-    margin: 18px 0 0;
-    font-size: 16px;
-    line-height: 1.6;
-  }
-
-  .content-right {
-    width: 100%;
-    height: auto;
-    min-height: 360px;
-    margin: 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .right-img {
-    position: relative;
-    right: auto;
-    bottom: auto;
-    width: 292px;
-    height: 292px;
-    margin-top: 55px;
-    flex: 0 0 292px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
   }
 
   .sub-circle1 {
@@ -5116,21 +4576,6 @@ iframe {
     height: 27px;
   }
 
-  /* Four social buttons: force one vertical column */
-  .right-img .design1 {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-  }
-
   .right-img .design1 .btn-effect1 {
     width: 100%;
     height: 62px;
@@ -5143,23 +4588,6 @@ iframe {
 
   .right-img .design1 .btn-effect1:last-child {
     margin-bottom: 0;
-  }
-
-  .right-img .btn4 {
-    position: relative;
-    width: 244px;
-    height: 62px;
-    min-width: 244px;
-    margin: 0;
-    padding: 10px 22px;
-    border-radius: 40px;
-    font-size: 14px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    z-index: 2;
   }
 
   .right-img .more4 {
@@ -5198,122 +4626,37 @@ iframe {
     min-width: 38px;
     min-height: 38px;
   }
-}
 
-@media only screen and (max-width: 479px) {
-
-  .black-img {
-    min-height: 683px;
-    padding: 50px 22px 40px;
-  }
-
-  .content-left p {
-    font-size: 15px;
-  }
-
-  .content-left h2 {
-    font-size: 34px;
-    line-height: 1.08;
-    padding-bottom: 27px;
-  }
-
-  .email a {
-    font-size: 21px;
-    line-height: 1.2;
-  }
-
-  .email p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-
-  .content-right {
-    min-height: 365px;
-  }
-
-  .right-img {
-    width: 292px;
-    height: 292px;
-    flex-basis: 292px;
-    margin-top: 55px;
-  }
-
-  .right-img .design1 .btn-effect1 {
-    height: 62px;
-    margin-bottom: 9px;
-  }
-
-  .right-img .btn4,
-  .right-img .btn5 {
-    width: 244px;
-    height: 62px;
-    font-size: 14px;
-  }
-
-  .right-img .more4,
-  .right-img .more5 {
-    width: 38px;
-    height: 38px;
-  }
-}
-
-/* =========================================================
-   MOBILE CTA - FINAL CORRECTION
-   Match reference: NO GREEN CIRCLE, 4 VERTICAL BUTTONS
-   ========================================================= */
-
-@media only screen and (max-width: 767px) {
-
-  /* Remove the green circular artwork behind the buttons */
-  .black .right-img {
-    background: none !important;
-    background-image: none !important;
-  }
-
-  /* Remove the three decorative green circles */
-  .black .right-img .sub-circle1,
-  .black .right-img .sub-circle2,
-  .black .right-img .sub-circle3 {
+  .black .right-img .sub-circle1, .black .right-img .sub-circle2, .black .right-img .sub-circle3 {
     display: none !important;
   }
 
-  /* Hide the hover/duplicate button groups.
-     The .line-btns group contains the 4 normal buttons
-     required by the reference screenshot. */
   .black .right-img .design1 {
     display: none !important;
   }
 
-  /* Four buttons in one vertical column */
   .black .right-img .line-btns {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-
     width: 100%;
-
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: flex-start !important;
-
     gap: 0px !important;
-
     padding: 0 !important;
     margin: 0 !important;
-
     z-index: 20;
   }
 
   .black .right-img .line-btns > a {
     width: 100%;
     height: 62px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin: 0 !important;
     padding: 0 !important;
     text-decoration: none;
@@ -5321,24 +4664,18 @@ iframe {
 
   .black .right-img .line-btns .btn4 {
     position: relative;
-
     width: 244px;
     min-width: 244px;
     height: 62px;
-
     margin: 0 !important;
     padding: 10px 22px;
-
     border-radius: 40px;
-
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
-
     font-size: 14px;
     font-weight: 700;
-
     z-index: 21;
   }
 
@@ -5347,11 +4684,9 @@ iframe {
     height: 38px;
     min-width: 38px;
     min-height: 38px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 50%;
   }
 
@@ -5360,7 +4695,6 @@ iframe {
     line-height: 1;
   }
 
-  /* Give the button column enough room */
   .black .content-right {
     min-height: 310px;
   }
@@ -5368,68 +4702,15 @@ iframe {
   .black .right-img {
     width: 292px;
     height: 292px;
-
     margin-top: 55px;
-
     flex: 0 0 292px;
-
     background: none !important;
     background-image: none !important;
   }
-}
 
-@media only screen and (max-width: 479px) {
-
-  .black .right-img {
-    width: 292px;
-    height: 292px;
-    flex-basis: 292px;
-    margin-top: 55px;
-  }
-
-  .black .right-img .line-btns .btn4 {
-    width: 244px;
-    min-width: 244px;
-    height: 62px;
-
-    font-size: 14px;
-  }
-
-  .black .right-img .line-btns .more4 {
-    width: 38px;
-    height: 38px;
-    min-width: 38px;
-    min-height: 38px;
-  }
-}
-
-/* =========================================================
-   FINAL MOBILE FOOTER FIX
-   ONLY FOOTER SECTION - MATCH REFERENCE IMAGE
-   ========================================================= */
-
-@media only screen and (max-width: 767px) {
-
-  /* Footer container */
   footer {
     width: 100%;
     background: #000;
-  }
-
-  .all-footer {
-    width: 100%;
-    max-width: 100%;
-    padding: 45px 64px 55px;
-    box-sizing: border-box;
-  }
-
-  /* Keep footer content in normal mobile flow */
-  .footer-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 0;
   }
 
   .footer-left {
@@ -5448,50 +4729,13 @@ iframe {
     padding: 0;
   }
 
-  /* 3 columns × 2 rows gallery */
-  .footer-img {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .footer-img1 {
-    width: calc(33.333333% - 7px);
-    margin: 0;
-    padding: 0;
-    max-width: none;
-  }
-
-  .footer-img1 img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    object-fit: cover;
-  }
-
-  /* Separator */
   .lines {
     width: 100%;
     margin: 50px 0 30px;
     border-top: 9px solid rgba(255, 255, 255, 0.048);
-    background-image: url(.assets/images/fline.svg);
+    background-image: url(./assets/images/fline.svg);
     background-repeat: repeat-x;
     background-size: auto 9px;
-  }
-
-  /* Copyright first, social row underneath */
-  .footer-bottom {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0;
   }
 
   .footer-bottom p {
@@ -5553,9 +4797,392 @@ iframe {
     font-weight: 700;
     color: #666;
   }
+
+  .black .black-img > .line-btns {
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 9px !important;
+    z-index: 20;
+  }
+
+  .black .black-img > .line-btns > a {
+    width: 100%;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-decoration: none;
+  }
+
+  .black .black-img > .line-btns .btn4 {
+    position: relative;
+    width: 244px;
+    min-width: 244px;
+    height: 62px;
+    margin: 0 !important;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    z-index: 21;
+  }
+
+  .black .black-img > .line-btns .more4 {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .black .black-img > .line-btns .pluse4 {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .black:has(.right-img .line-btns) .black-img > .line-btns {
+    display: none !important;
+  }
+
+  .thomas-customer {
+    width: 100%;
+    max-width: 100%;
+    padding: 62px 0 120px !important;
+    margin: 0 !important;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .customer-content {
+    width: min(354px, calc(100vw - 60px)) !important;
+    max-width: min(354px, calc(100vw - 60px)) !important;
+    height: 464px !important;
+    min-height: 464px !important;
+    margin: 0 auto !important;
+    padding: 108px 30px 80px !important;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    box-sizing: border-box;
+  }
+
+  .content-img {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    opacity: 0.2;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  .thomas-review {
+    width: 100% !important;
+    height: 100%;
+    display: block !important;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+  }
+
+  .review-text {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #fff;
+    text-align: center;
+  }
+
+  .review-text p {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #fff;
+    font-size: 15px !important;
+    line-height: 1.45 !important;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .review-text h5 {
+    width: 100%;
+    margin: 4px 0 12px !important;
+    padding: 0 !important;
+    color: #fff;
+    font-size: 26px !important;
+    line-height: 1.2 !important;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .review-stars {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 14px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .review-stars p {
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #fff;
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+    text-align: center;
+  }
+
+  .review-stars .stars-4 {
+    width: 120px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 3px !important;
+    border-radius: 20px !important;
+    background: #d8ff36 !important;
+    color: #000 !important;
+    font-size: 12px !important;
+    line-height: 1 !important;
+    box-sizing: border-box;
+  }
+
+  .review-stars .stars-4 i {
+    display: inline-block;
+    color: #000 !important;
+    font-size: 12px !important;
+    line-height: 1 !important;
+  }
+
+  .thomas-review .arrow, .thomas-review .arrow2 {
+    top: auto !important;
+    bottom: 26px !important;
+    transform: none !important;
+    width: 80px !important;
+    height: 80px !important;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 50% !important;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+
+  .thomas-review .arrow {
+    right: 35px !important;
+    left: auto !important;
+    border: 1px solid #fff !important;
+  }
+
+  .thomas-review .arrow2 {
+    left: 60px !important;
+    right: auto !important;
+    border: 1px solid #ffffff38 !important;
+  }
+
+  .thomas-review .arrow i, .thomas-review .arrow2 i {
+    position: absolute !important;
+    left: 50% !important;
+    right: auto !important;
+    top: 50% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 58px !important;
+    line-height: 1 !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .thomas-review .arrow i {
+    color: #fff !important;
+  }
+
+  .thomas-review .arrow2 i {
+    color: #ffffff38 !important;
+  }
+
+  .thomas-review .arrow::before {
+    width: 80px !important;
+    height: 80px !important;
+    left: 0 !important;
+    right: auto !important;
+    top: 0 !important;
+  }
+
+  .awards {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px 22px 100px !important;
+    margin: 0;
+  }
+
+  .awards-heading {
+    width: 100%;
+    margin: 0 0 28px !important;
+    padding: 0 !important;
+    text-align: left;
+  }
+
+  .awards-heading h5 {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 22px !important;
+    line-height: 1 !important;
+    font-weight: 700 !important;
+  }
+
+  .awards-cards {
+    width: 100%;
+    max-width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+    gap: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .awards-cards1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 36px !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    display: block !important;
+  }
+
+  .awards-cards1:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .awards-cards1 img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 222px !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    margin: 20px 0 24px !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    background-color: #d4ff27 !important;
+  }
+
+  .awards-cards1 h5 {
+    margin: 0 0 8px !important;
+    padding: 0 !important;
+    font-size: 60px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    color: #000 !important;
+  }
+
+  .awards-cards1 p {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+    font-weight: 400 !important;
+    color: #1b252e !important;
+  }
+
 }
 
+/* Mobile End */
+
+/* Small Mobile Start */
+
 @media only screen and (max-width: 575px) {
+
+  .header {
+    min-height: 660px;
+  }
+
+  .content h1 {
+    font-size: clamp(40px, 12vw, 54px);
+  }
+
+  .subtitle {
+    font-size: 17px;
+  }
+
+  .creation {
+    padding-top: 35px;
+    padding-bottom: 65px;
+  }
+
+  .circle {
+    width: min(330px, calc(100vw - 30px));
+    min-height: min(330px, calc(100vw - 30px));
+    padding: 34px 20px;
+  }
+
+  .circle img {
+    width: 50px;
+  }
+
+  .circle h5 {
+    font-size: clamp(32px, 10vw, 43px);
+  }
+
+  .circle p {
+    max-width: 265px;
+    font-size: 14.5px;
+  }
+
+  .project-visual {
+    height: 290px;
+  }
+
+  .project-green-circle {
+    width: min(250px, 72vw);
+    height: min(250px, 72vw);
+    margin-left: -34%;
+  }
+
+  .project-image {
+    width: min(290px, 82vw);
+    height: min(215px, 61vw);
+    top: 36px;
+  }
+
+  .clients-cards1 {
+    width: 100%;
+  }
 
   .all-footer {
     padding-left: 64px;
@@ -5575,23 +5202,96 @@ iframe {
     margin-bottom: 28px;
   }
 
-  .footer-bottom p {
-    font-size: 18px;
-    line-height: 1.3;
+  .black .black-img > .line-btns {
+    top: 375px;
   }
 
-  .social-footer ul {
-    gap: 8px;
-  }
-
-  .social-footer ul li a {
-    width: 82px;
-    height: 82px;
-    font-size: 27px;
-  }
 }
 
+/* Small Mobile End */
+
+/* Extra Small Mobile Start */
+
 @media only screen and (max-width: 479px) {
+
+  nav {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  .menuIcon {
+    font-size: 36px;
+  }
+
+  .list {
+    right: 13px;
+    width: 220px;
+    max-width: calc(100vw - 26px);
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .circle {
+    width: min(355px, calc(100vw - 24px));
+    min-height: min(329px, calc(100vw - 24px));
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .circle p {
+    max-width: 250px;
+    font-size: 14px;
+  }
+
+  .project-category {
+    width: 92px;
+  }
+
+  .project-name {
+    font-size: 20px;
+  }
+
+  .project-visual {
+    height: 275px;
+  }
+
+  .project-green-circle {
+    width: min(235px, 70vw);
+    height: min(235px, 70vw);
+    margin-left: -32%;
+  }
+
+  .project-image {
+    width: min(280px, 82vw);
+    height: min(208px, 61vw);
+  }
+
+  .black-img {
+    padding: 50px 22px 40px;
+  }
+
+  .content-left h2 {
+    padding-bottom: 27px;
+  }
+
+  .content-right {
+    min-height: 365px;
+  }
+
+  .right-img {
+    flex-basis: 292px;
+  }
+
+  .about-title {
+    font-size: clamp(36px, 10vw, 48px);
+  }
 
   .all-footer {
     padding-left: 48px;
@@ -5606,8 +5306,27 @@ iframe {
     width: calc(33.333333% - 5.333333px);
   }
 
-  .footer-bottom p {
-    font-size: 18px;
+  nav .logo-main {
+    width: 42px;
+  }
+
+  .about-head, .agency, .brand-creation, .family, .contact, .blog-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .right-img .btn4, .right-img .btn5 {
+    width: 244px;
+    height: 62px;
+    font-size: 14px;
+  }
+
+  .right-img .more4, .right-img .more5 {
+    width: 38px;
+    height: 38px;
+  }
+
+  .black .right-img {
+    flex-basis: 292px;
   }
 
   .social-footer ul {
@@ -5619,113 +5338,54 @@ iframe {
     height: 78px;
     font-size: 26px;
   }
-}
 
-/* =========================================================
-   TASK 1 FIX — TEAM + SERVICES MOBILE CTA BUTTONS
-   The Home page has a .line-btns inside .right-img, while
-   Team/Services have the mobile button group directly inside
-   .black-img. This makes the same 4-button mobile CTA work
-   on all three pages without changing the desktop layout.
-   ========================================================= */
-
-@media only screen and (max-width: 767px) {
-
-  /* Show the direct mobile button group used by Team/Services. */
-  .black .black-img > .line-btns {
-    position: absolute;
-    top: 380px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    width: 100%;
-    padding: 0;
-    margin: 0;
-
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    gap: 9px !important;
-
-    z-index: 20;
-  }
-
-  .black .black-img > .line-btns > a {
-    width: 100%;
-    height: 62px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin: 0 !important;
-    padding: 0 !important;
-    text-decoration: none;
-  }
-
-  .black .black-img > .line-btns .btn4 {
-    position: relative;
-
-    width: 244px;
-    min-width: 244px;
-    height: 62px;
-
-    margin: 0 !important;
-    padding: 10px 22px;
-
-    border: none;
-    border-radius: 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-
-    font-size: 14px;
-    font-weight: 700;
-    z-index: 21;
-  }
-
-  .black .black-img > .line-btns .more4 {
-    width: 38px;
-    height: 38px;
-    min-width: 38px;
-    min-height: 38px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-  }
-
-  .black .black-img > .line-btns .pluse4 {
-    font-size: 20px;
-    line-height: 1;
-  }
-
-  /* Keep Home exactly as it is: its mobile buttons are already
-     inside .right-img, so hide only the duplicate outer group. */
-  .black:has(.right-img .line-btns) .black-img > .line-btns {
-    display: none !important;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .black .black-img > .line-btns {
-    top: 375px;
-  }
-}
-
-@media only screen and (max-width: 479px) {
   .black .black-img > .line-btns {
     top: 370px;
   }
 
-  .black .black-img > .line-btns .btn4 {
-    width: 244px;
-    min-width: 244px;
-    height: 62px;
-    font-size: 14px;
+  .thomas-customer {
+    padding-top: 50px !important;
   }
+
+  .customer-content {
+    width: min(354px, calc(100vw - 40px)) !important;
+    max-width: min(354px, calc(100vw - 40px)) !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+
+  .review-text p {
+    font-size: 14px !important;
+  }
+
+  .review-text h5 {
+    font-size: 24px !important;
+  }
+
+  .thomas-review .arrow {
+    right: 20px !important;
+  }
+
+  .thomas-review .arrow2 {
+    left: 20px !important;
+  }
+
+  .awards {
+    padding: 0px 16px 0px !important;
+  }
+
+  .awards-heading {
+    margin-bottom: 28px !important;
+  }
+
+  .awards-cards1 {
+    margin-bottom: 36px !important;
+  }
+
+  .awards-cards1 h5 {
+    margin-bottom: 8px !important;
+  }
+
 }
+
+/* Extra Small Mobile End */
